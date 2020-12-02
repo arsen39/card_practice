@@ -1,10 +1,11 @@
-body{
+body {
   margin: 20px;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 .cardbox {
+  position: relative;
   display: inline-block;
   box-sizing: border-box;
   border: 1px solid transparent;
@@ -12,44 +13,77 @@ body{
   min-height: 300px;
   border-radius: 10px;
   padding: 80px 50px;
+  overflow: hidden;
 }
 
-.card1{
-  background-image: linear-gradient(90deg, rgba(254,192,155,1) 0%, rgba(255,140,170,1) 100%);
+.card1 {
+  background-image: linear-gradient(
+    90deg,
+    rgba(254, 192, 155, 1) 0%,
+    rgba(255, 140, 170, 1) 100%
+  );
 }
 
-.card2{
-  background-image: linear-gradient(90deg, rgba(139,200,245,1) 0%, rgba(50,149,228,1) 100%);
+.card2 {
+  background-image: linear-gradient(
+    90deg,
+    rgba(139, 200, 245, 1) 0%,
+    rgba(50, 149, 228, 1) 100%
+  );
 }
 
-.card3{
-background-image: linear-gradient(90deg, rgba(122,217,208,1) 0%, rgba(49,216,190,1) 100%);
+.card3 {
+  background-image: linear-gradient(
+    90deg,
+    rgba(122, 217, 208, 1) 0%,
+    rgba(49, 216, 190, 1) 100%
+  );
 }
 
-.icon{
+.icon {
   display: inline-block;
   margin-left: 200px;
 }
 
-.icon-img{
- min-width: 30px;
+.icon-img {
+  min-width: 30px;
 }
 
-.cardbox + .cardbox{
+.cardbox + .cardbox {
   margin-left: 50px;
 }
 
-.card-header{
+.card-header {
   font-size: 1.8em;
   margin-bottom: 30px;
 }
 
-.card-body{
+.card-body {
   font-size: 2.5em;
   font-weight: bold;
   margin-bottom: 50px;
 }
 
-.card-footer{
+.card-footer {
   font-size: 1.2em;
+}
+
+.card-decor-round {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  background-color: white;
+  border: 1px solid transparent;
+  opacity: 30%;
+}
+
+.card-decor-round1{
+  left: 50%;
+  top: 50%;
+}
+
+.card-decor-round2{
+  bottom: 20%;
+  left: 70%;
 }
