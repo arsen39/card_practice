@@ -42,7 +42,8 @@ body {
 
 .icon {
   display: inline-block;
-  margin-left: 200px;
+  position: absolute;
+  right: 0;
 }
 
 .icon-img {
@@ -56,6 +57,7 @@ body {
 .card-header {
   font-size: 1.8em;
   margin-bottom: 30px;
+  position: relative;
 }
 
 .card-body {
@@ -68,7 +70,8 @@ body {
   font-size: 1.2em;
 }
 
-.card-decor-round {
+.cardbox::before, .cardbox::after{
+  content: '';
   position: absolute;
   width: 300px;
   height: 300px;
@@ -78,12 +81,12 @@ body {
   opacity: 30%;
 }
 
-.card-decor-round1{
+.cardbox::before{
   left: 50%;
   top: 50%;
 }
 
-.card-decor-round2{
+.cardbox::after{
   bottom: 20%;
   left: 70%;
 }
